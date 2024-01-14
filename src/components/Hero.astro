@@ -1,0 +1,16 @@
+---
+const {pretitle, title, subtitle, imgurl}: {pretitle:string, title:string, subtitle:string, imgurl:URL} = Astro.props;
+---
+<div class="flex w-full bg-center bg-cover" style={{backgroundImage: `url(${imgurl})`}}>
+    <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
+        <div class="text-center">
+            <div class="container px-4 mx-auto">
+                <div class="max-w-4xl mx-auto text-center">
+                    {pretitle && <span class="text-gray-200 font-semibold uppercase tracking-widest">{pretitle}</span>}
+                    <h2 class="text-gray-100 text-4xl lg:text-5xl my-3">{title}</h2>
+                    {subtitle && <h3 class="max-w-3xl mx-auto mb-2 text-lg text-gray-300 whitespace-pre-line">{subtitle}</h3>}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

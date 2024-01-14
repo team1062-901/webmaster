@@ -1,61 +1,85 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
 ---
 <Layout>
 
-<h2 class="w-full bg-gray-300 text-center py-4 text-2xl">About Us</h2>
-<div class="mx-3 lg:mx-5 space-y-5">
-    <figure class="max-w-screen-md mx-auto text-center">
-        <img src="/quote-icon.svg" alt="Quote" class="mx-auto w-[10%]">
+    <!-- <h2 class="w-full bg-gray-300 text-center py-4 text-2xl">About Us</h2> -->
+    <Hero title="About Us" imgurl="/about-us-background.png"/>
+    <div class="mx-3 lg:mx-5 space-y-5">
+        <figure class="max-w-screen-md mx-auto text-center">
 
-        <blockquote><p class="text-lg lg:text-2xl italic font-medium text-gray-900 text-center">"Our mission is to
-            inspire homeowners to make
-            responsible choices when it comes to the energy they use
-            in their homes."</p>
-        </blockquote>
-        <figcaption class="flex items-center justify-center mt-6 space-x-3">
-            <img class="w-8 lg:w-10 rounded-full" src="/founder.png" alt="Headshot of Founder">
-            <div class="flex items-center divide-x-2 divide-gray-500">
-                <cite class="pe-3 font-medium lg:text-lg text-gray-900">Jonathan Fortreau</cite>
-                <cite class="ps-3 text-sm lg:text-base">Founder<span class="hidden min-[380px]:inline"> of GreenLeague</span></cite>
-            </div>
-        </figcaption>
-    </figure>
+            <svg class="w-8 md:w-10 text-gray-400 mx-auto my-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                 fill="currentColor" viewBox="0 0 18 14">
+                <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+            </svg>
+            <blockquote><p class="text-lg md:text-2xl italic font-medium text-gray-900 text-center">"Our mission is to
+                inspire homeowners to make
+                responsible choices when it comes to the energy they use
+                in their homes."</p>
+            </blockquote>
+            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                <img class="w-8 lg:w-10 rounded-full" src="/founder.png" alt="Headshot of Founder">
+                <div class="flex items-center divide-x-2 divide-gray-500">
+                    <cite class="pe-3 font-medium lg:text-lg text-gray-900">Jonathan Fortreau</cite>
+                    <cite class="ps-3 text-sm lg:text-base">Founder<span class="hidden min-[380px]:inline"> of GreenLeague</span></cite>
+                </div>
+            </figcaption>
+        </figure>
 
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet porttitor magna. Nulla nec nisl nec erat
-        convallis viverra. Curabitur luctus ipsum metus, eget ornare purus facilisis eu. Fusce ut est enim. Curabitur
-        commodo lacus in felis lacinia posuere. Sed accumsan elementum diam in scelerisque. Proin placerat nisl ut quam
-        convallis auctor. Pellentesque fermentum dignissim ultrices. Donec at justo mattis, consectetur massa ut, dictum
-        lacus. Nam laoreet lacinia purus placerat dignissim. Proin quis urna sit amet sem posuere venenatis. Nulla
-        sagittis imperdiet sapien, vel malesuada justo dapibus feugiat. Etiam fringilla tincidunt tortor, dapibus
-        iaculis tellus accumsan et. Suspendisse pulvinar nisi nec lacinia fringilla.
-        <br>
-        Aliquam erat volutpat. Curabitur vitae lacus sed sem consectetur placerat. Etiam dignissim viverra cursus.
-        Integer convallis, ex nec aliquam placerat, metus dui euismod nunc, quis iaculis sapien velit at neque. Fusce
-        volutpat metus libero, id eleifend quam pulvinar ac. Sed ac malesuada ligula, ut lobortis dui. Aliquam nec magna
-        pharetra, malesuada nunc quis, finibus risus. Quisque sodales libero facilisis rhoncus bibendum. Morbi laoreet
-        nisl id erat placerat, sed lacinia nisl posuere. Quisque consequat consectetur massa nec condimentum.
-        Suspendisse dapibus, metus id lacinia aliquam, diam ipsum cursus eros, eget tristique ex quam porta erat.
-        Pellentesque condimentum commodo luctus. Nulla blandit porta lectus. Praesent quis neque in turpis ultricies
-        fringilla sit amet vel justo.
-        <br>
-        Vivamus sit amet dui libero. Proin laoreet ultrices lacus sed malesuada. Nulla facilisi. Nam vehicula finibus
-        lectus quis laoreet. Donec eu lectus orci. Vestibulum id nisi lectus. Pellentesque porta eu ante vel euismod.
-        Vivamus vehicula pharetra pellentesque. Quisque eu lacinia lacus, eget suscipit elit.
-        <br>
-        Curabitur vitae lacinia nunc. Nam semper, eros sed egestas semper, ante lacus fringilla leo, sed maximus mauris
-        nunc eget justo. Nam congue erat a dui sollicitudin finibus. Aliquam nec nisi scelerisque, luctus metus in,
-        blandit leo. Vivamus mattis est mauris, eu ullamcorper nunc aliquam ut. Nulla facilisi. Nam consequat augue et
-        turpis rutrum laoreet ac quis erat. Nam luctus leo tortor, consequat pretium neque consequat vitae. Curabitur
-        suscipit ipsum at justo ullamcorper, ac ullamcorper ex pellentesque. Aliquam vitae rutrum erat. Curabitur eu
-        pretium nunc.
-        <br>
-        Duis bibendum, nunc sed sodales ornare, velit odio tempor dolor, id rhoncus tortor turpis id est. Aliquam
-        interdum quis turpis eget auctor. Aliquam quis feugiat arcu, sed scelerisque neque. Fusce ut hendrerit nisl,
-        vitae tristique risus. Maecenas odio ipsum, volutpat lacinia feugiat ut, eleifend et est. Mauris iaculis nisl
-        odio, id maximus nibh posuere ut. Pellentesque libero mauris, luctus nec urna ac, finibus bibendum libero.
-        Mauris porta ipsum sem, vitae commodo sem ultricies vitae. Pellentesque ultrices cursus ultricies. Proin vitae
-        convallis sem.</p>
-</div>
+        <p>
+            Hello! We are so glad you are here and welcome to the Green League! You might be wondering who we are and
+            what we believe and we are here to help answer all of your burning questions. The Green League is a
+            nonprofit organization first started by our founder, Jonathan Fortreau a couple of years ago to help combat
+            the use of fossil fuel use in homes. Having grown up in the home of influential oil barons, Mr. Fortreau has
+            worked tirelessly to right the wrongs of his parents and bring about substantial improvements for the
+            betterment of humanity and it all starts here with this very organization.
+        </p>
+
+        <div class="md:float-right md:ml-5 my-3 md:w-[35%]">
+            <blockquote class="text-lg italic font-semibold text-gray-900 ">
+                <svg class="w-7 h-7 text-gray-400 mb-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                     fill="currentColor" viewBox="0 0 18 14">
+                    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                </svg>
+                <p>"We can stop this crisis only if we work together and unite for such a cause and it
+                    starts at the smallest steps such as what powers the place we spend the most time, our homes."</p>
+            </blockquote>
+        </div>
+        <p>
+            We here at the Green League value our importance to this major cause, and work to instill our five core
+            values within our organization’s members; hard work, community, justice, empathy, and respect. While each of
+            these might sound cliche for an organization to stand for, they are taken to heart when it comes to our
+            organization. These are the core values that are instilled within every member of our organization, who work
+            tirelessly each day to fight this fight against climate change one step at a time. It is only
+            through our community, sense of what is right from wrong, feelings for others, and hard work that we can
+            truly change the world.
+        </p>
+        <div class="md:float-right md:ml-5 my-3 md:w-[35%]">
+            <blockquote class="text-lg italic font-semibold text-gray-900">
+                <svg class="w-7 h-7 text-gray-400 mb-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                     fill="currentColor" viewBox="0 0 18 14">
+                    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                </svg>
+                <p>"I truly believe that with the proper information and awareness available to people, we can all
+                    make the right choice when it comes to the fundamentals of heating and powering our homes for
+                    the better"</p>
+            </blockquote>
+        </div>
+            <p>
+                Originally the Green League was a small group of environmentalists dedicated to preventing climate
+                change through petitions and rallies but has since grown to an alliance of ten nonprofit organizations
+                working with each other and the local government to change the world for the better. Since our
+                inception, we have brought about great change in many ways. Currently, we are working with the IRS to
+                provide valuable tax incentives to people if they switch over to renewable energy. In addition, we have
+                a dedicated community of lawyers and activists who work to promote our cause in several ways. While our
+                lawyers work to lobby and convince various government officials to switch over to renewable energy, our
+                activists are sent out to convince various homeowners of the benefits of renewable energy use within the
+                world and why we should make the switch. And although we are a large organization, we are always looking
+                toward the future and hope to expand our organization internationally across the globe.
+            </p>
+        <p>
+            If you are interested in joining our cause, please contact us with any questions you might have. We are also always looking for various new nonprofit organizations to partner up with, if you represent any nonprofit organization, feel free to reach out to us with any questions you might have.
+        </p>
+    </div>
 </Layout>
